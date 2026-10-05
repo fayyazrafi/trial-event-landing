@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SYNTHESIS 2026 | Experiential & Brand Activation Summit</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              purple: '#7928CA',
+              cyan: '#00DFD8',
+              pink: '#FF0080',
+              dark: '#0A0A0E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(18, 18, 26, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(22, 22, 34, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.3s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 223, 216, 0.4);
+      transform: translateY(-4px);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 40px -10px rgba(0, 223, 216, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-[#07070A] text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-brand-cyan selection:text-black">
+
+  <!-- Background Ambience -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-purple/20 rounded-full blur-[140px]"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-brand-cyan/15 rounded-full blur-[150px]"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-brand-pink/15 rounded-full blur-[160px]"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 inset-x-0 z-50 glass">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-purple to-brand-cyan flex items-center justify-center font-display font-bold text-xl text-black">
+          S
+        </div>
+        <span class="font-display font-bold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
+          SYNTHESIS<span class="text-brand-cyan">.26</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-white transition">Tentang</a>
+        <a href="#schedule" class="hover:text-white transition">Rundown</a>
+        <a href="#speakers" class="hover:text-white transition">Speakers</a>
+        <a href="#tickets" class="hover:text-white transition">Tiket</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#tickets" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-black bg-gradient-to-r from-brand-cyan to-emerald-400 hover:opacity-90 transition glow-cyan">
+          Beli Tiket
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative z-10 pt-36 pb-20">
+    <section class="max-w-7xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 border border-white/10 text-xs font-medium text-slate-300">
+        <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+        Experiential Marketing & Brand Activation Summit 2026
+      </div>
+
+      <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight max-w-5xl mx-auto leading-[1.1]">
+        Bikin Event & Aktivasi Brand yang <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan via-purple-400 to-brand-pink">Nggak Cuma Dilihat, Tapi Diingat.</span>
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Kumpulkan 1,500+ kreator, brand builder, dan event strategist. Belajar eksekusi campaign fisik-digital yang immersive, viral, dan berdampak nyata.
+      </p>
+
+      <!-- Countdown -->
+      <div class="mt-12 max-w-2xl mx-auto grid grid-cols-4 gap-3 sm:gap-4 text-center">
+        <div class="glass p-4 rounded-2xl">
+          <div id="days" class="text-3xl sm:text-4xl font-display font-bold text-brand-cyan">18</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Hari</div>
+        </div>
+        <div class="glass p-4 rounded-2xl">
+          <div id="hours" class="text-3xl sm:text-4xl font-display font-bold text-white">08</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Jam</div>
+        </div>
+        <div class="glass p-4 rounded-2xl">
+          <div id="mins" class="text-3xl sm:text-4xl font-display font-bold text-white">45</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Menit</div>
+        </div>
+        <div class="glass p-4 rounded-2xl">
+          <div id="secs" class="text-3xl sm:text-4xl font-display font-bold text-brand-pink">30</div>
+          <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Detik</div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#tickets" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-black bg-gradient-to-r from-brand-cyan to-emerald-400 hover:opacity-90 transition glow-cyan text-sm tracking-wide">
+          AMANKAN SEAT SEKARANG →
+        </a>
+        <a href="#schedule" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium glass hover:bg-white/5 transition text-sm text-slate-200">
+          Lihat Rundown Acara
+        </a>
+      </div>
+    </section>
+
+    <!-- Event Key Metrics -->
+    <section class="max-w-7xl mx-auto px-6 mt-24">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="glass-card p-6 rounded-2xl text-center">
+          <h3 class="font-display text-3xl font-bold text-white">1,500+</h3>
+          <p class="text-xs text-slate-400 mt-1">Creative & Brand Leaders</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center">
+          <h3 class="font-display text-3xl font-bold text-brand-cyan">24+</h3>
+          <p class="text-xs text-slate-400 mt-1">Keynote & Panel Sessions</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center">
+          <h3 class="font-display text-3xl font-bold text-purple-400">12</h3>
+          <p class="text-xs text-slate-400 mt-1">Interactive Brand Booths</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center">
+          <h3 class="font-display text-3xl font-bold text-brand-pink">2 Hari</h3>
+          <p class="text-xs text-slate-400 mt-1">Full Networking & Insight</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="max-w-7xl mx-auto px-6 mt-32">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold">Lineup Pembicara</h2>
+        <p class="text-slate-400 text-sm mt-3">Para praktisi yang membentuk tren experiential marketing di Asia Tenggara.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-slate-800 border-2 border-brand-cyan/40 mb-4 overflow-hidden flex items-center justify-center font-display text-2xl text-slate-400">
+            AR
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">Aditya Rayhan</h4>
+          <p class="text-xs text-brand-cyan font-medium mt-0.5">Head of Creative Experience, M&C Saatchi</p>
+          <p class="text-xs text-slate-400 mt-3 leading-relaxed">"Designing Multi-Sensory Brand Worlds: Dari Ide Liar ke Eksekusi Lapangan."</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-slate-800 border-2 border-purple-500/40 mb-4 overflow-hidden flex items-center justify-center font-display text-2xl text-slate-400">
+            NW
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">Nadia Wardhani</h4>
+          <p class="text-xs text-purple-400 font-medium mt-0.5">Founder, Outlier Activation Lab</p>
+          <p class="text-xs text-slate-400 mt-3 leading-relaxed">"Pop-up Spaces yang Menciptakan Viralitas Organik Tanpa Budget Iklan Gila-Gilaan."</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-full bg-slate-800 border-2 border-brand-pink/40 mb-4 overflow-hidden flex items-center justify-center font-display text-2xl text-slate-400">
+            DK
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">Dimas Kusuma</h4>
+          <p class="text-xs text-brand-pink font-medium mt-0.5">VP Marketing, Future Retail Group</p>
+          <p class="text-xs text-slate-400 mt-3 leading-relaxed">"Mengukur ROI Offline Event: Menghubungkan Crowd Traffic dengan Revenue."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="max-w-4xl mx-auto px-6 mt-32">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold">Rundown Acara</h2>
+        <p class="text-slate-400 text-sm mt-3">Padat materi, case study bedah langsung, dan sesi networking eksklusif.</p>
+      </div>
+
+      <div class="glass rounded-2xl p-6 sm:p-8 space-y-6">
+        <div class="flex items-start gap-4 pb-6 border-b border-white/5">
+          <span class="text-xs font-mono px-3 py-1 rounded bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20">09:00 - 10:30</span>
+          <div>
+            <h4 class="font-bold text-white text-base">Keynote: The New Era of Experiential Marketing</h4>
+            <p class="text-xs text-slate-400 mt-1">Tren global shifting dari digital ads ke memorable physical interactions.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 pb-6 border-b border-white/5">
+          <span class="text-xs font-mono px-3 py-1 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">11:00 - 12:30</span>
+          <div>
+            <h4 class="font-bold text-white text-base">Masterclass: Spatial Design & Brand Storytelling</h4>
+            <p class="text-xs text-slate-400 mt-1">Membongkar cara mendesain alur pengunjung agar betah dan engage dengan booth.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 pb-6 border-b border-white/5">
+          <span class="text-xs font-mono px-3 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">13:30 - 15:00</span>
+          <div>
+            <h4 class="font-bold text-white text-base">Interactive Panel: Production Logistics & Budget Control</h4>
+            <p class="text-xs text-slate-400 mt-1">Solusi teknis mitigasi risiko saat produksi event skala besar.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-xs font-mono px-3 py-1 rounded bg-brand-pink/10 text-brand-pink border border-brand-pink/20">15:30 - 17:00</span>
+          <div>
+            <h4 class="font-bold text-white text-base">VIP Networking & Cocktails Session</h4>
+            <p class="text-xs text-slate-400 mt-1">Tatap muka langsung dengan para speaker, sponsor, dan agency leaders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="max-w-7xl mx-auto px-6 mt-32">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold">Pilih Kategori Tiket</h2>
+        <p class="text-slate-400 text-sm mt-3">Seat terbatas untuk menjaga kualitas networking yang intim dan eksklusif.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Tier 1 -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Standard Pass</span>
+            <div class="mt-4 flex items-baseline gap-1">
+              <span class="text-sm font-semibold">Rp</span>
+              <span class="text-4xl font-display font-bold text-white">499.000</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">Cocok untuk mahasiswa, junior strategist & enthusiast.</p>
+            <ul class="mt-6 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2">✓ Akses Keynote & Panel 2 Hari</li>
+              <li class="flex items-center gap-2">✓ Festival Kit & Merchandise</li>
+              <li class="flex items-center gap-2">✓ E-Certificate Resmi</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Standard Pass', 499000)" class="mt-8 w-full py-3 rounded-xl font-semibold text-xs uppercase tracking-wider glass hover:bg-white/10 transition">
+            Pilih Standard
+          </button>
+        </div>
+
+        <!-- Tier 2 (Featured) -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border-brand-cyan/50 relative glow-cyan">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-brand-cyan text-black">
+            PALING POPULER
+          </div>
+          <div>
+            <span class="text-xs uppercase tracking-wider text-brand-cyan font-semibold">All-Access Pass</span>
+            <div class="mt-4 flex items-baseline gap-1">
+              <span class="text-sm font-semibold">Rp</span>
+              <span class="text-4xl font-display font-bold text-white">899.000</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">Akses lengkap materi workshop dan live case study.</p>
+            <ul class="mt-6 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2">✓ Semua benefit Standard Pass</li>
+              <li class="flex items-center gap-2">✓ Akses Breakout Workshop</li>
+              <li class="flex items-center gap-2">✓ Materi Slide & Playbook Event</li>
+              <li class="flex items-center gap-2">✓ Lunch & Coffee Break</li>
+            </ul>
+          </div>
+          <button onclick="openModal('All-Access Pass', 899000)" class="mt-8 w-full py-3 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-brand-cyan to-emerald-400 text-black hover:opacity-95 transition">
+            Pilih All-Access
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-purple-400 font-semibold">VIP / Agency Pass</span>
+            <div class="mt-4 flex items-baseline gap-1">
+              <span class="text-sm font-semibold">Rp</span>
+              <span class="text-4xl font-display font-bold text-white">1.799.000</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">Untuk agency owners, brand manager & director.</p>
+            <ul class="mt-6 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2">✓ Semua benefit All-Access</li>
+              <li class="flex items-center gap-2">✓ Akses VIP Lounge & Cocktails</li>
+              <li class="flex items-center gap-2">✓ 1-on-1 Mentoring / Consultation</li>
+              <li class="flex items-center gap-2">✓ Priority Front-Row Seating</li>
+            </ul>
+          </div>
+          <button onclick="openModal('VIP / Agency Pass', 1799000)" class="mt-8 w-full py-3 rounded-xl font-semibold text-xs uppercase tracking-wider glass hover:bg-white/10 transition">
+            Pilih VIP
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="max-w-3xl mx-auto px-6 mt-32">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl font-bold">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        <div class="glass rounded-xl p-5">
+          <h4 class="font-semibold text-sm text-white">Apakah tiket bisa dipindahtangankan?</h4>
+          <p class="text-xs text-slate-400 mt-2">Bisa, maksimal H-3 sebelum acara dimulai dengan konfirmasi melalui email resmi support kami.</p>
+        </div>
+        <div class="glass rounded-xl p-5">
+          <h4 class="font-semibold text-sm text-white">Apakah ada sertifikat untuk peserta?</h4>
+          <p class="text-xs text-slate-400 mt-2">Ya, seluruh pemegang tiket terverifikasi akan mendapatkan sertifikat digital yang bisa ditautkan langsung ke LinkedIn.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Checkout Modal -->
+  <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 hidden">
+    <div class="glass max-w-md w-full rounded-3xl p-6 sm:p-8 relative border border-white/20">
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">✕</button>
+      
+      <h3 class="font-display font-bold text-xl text-white">Registrasi Tiket</h3>
+      <p class="text-xs text-slate-400 mt-1">Lengkapi data untuk reservasi e-ticket Anda.</p>
+
+      <form onsubmit="handleCheckout(event)" class="mt-6 space-y-4">
+        <div>
+          <label class="block text-xs text-slate-300 font-medium mb-1">Kategori Tiket</label>
+          <input type="text" id="modal-tier" readonly class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-brand-cyan text-sm font-semibold outline-none">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-medium mb-1">Nama Lengkap</label>
+          <input type="text" required placeholder="Contoh: Alex Pratama" class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-brand-cyan">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-medium mb-1">Email Aktif</label>
+          <input type="email" required placeholder="alex@company.com" class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-brand-cyan">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-medium mb-1">Instansi / Perusahaan</label>
+          <input type="text" placeholder="Nama Brand / Agency" class="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm outline-none focus:border-brand-cyan">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-brand-cyan to-emerald-400 text-black hover:opacity-95 transition mt-4">
+          Lanjutkan ke Pembayaran
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10 mt-32 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6">
+      <p>© 2026 SYNTHESIS Production. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Live Countdown Logic (Target: 18 hari dari sekarang)
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 18);
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate.getTime() - now;
+      if (diff <= 0) return;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerText = String(days).padStart(2, '0');
+      document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('mins').innerText = String(mins).padStart(2, '0');
+      document.getElementById('secs').innerText = String(secs).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Modal Control
+    function openModal(tierName, price) {
+      document.getElementById('modal-tier').value = `${tierName} (Rp ${price.toLocaleString('id-ID')})`;
+      document.getElementById('modal').classList.remove('hidden');
+    }
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden');
+    }
+    function handleCheckout(e) {
+      e.preventDefault();
+      alert('Terima kasih! Invoice pendaftaran telah dikirim ke email Anda.');
+      closeModal();
+    }
+  </script>
+</body>
+</html>
